@@ -16,7 +16,11 @@ console.log(student.test === undefined); // true -> 존재하지 않는다.
 // undefined 값이라 true라고 나온다. => 존재하지 않는다고 판별되는 문제가 생긴다.
 
 // 이 문제를 해결하는 in 연산자.
-console.log("name" in student); // 
+console.log("name" in student); // true
+console.log("heihgt" in student); // false
+console.log("test" in student); // true
+
+
 
 
 
