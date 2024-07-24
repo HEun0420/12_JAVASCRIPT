@@ -32,4 +32,25 @@ test=null;
 console.log(typeof test); // number
 // 자바스크립트 첫번째 버전의 버그 --> 기존 코드에 영향을 줄 수 있어서 수정 안됨
 
+test={}; // 객체
+console.log(typeof test); // object
+
+test= []; // 배열
+console.log(typeof test); // object
+
+test= function(){}; // 함수
+console.log(typeof test); // function
+
+/* 
+동적 타입 언어 단점을 보완하기 위해 유의할 점
+
+1. 변수는 꼭 필요한 경우에 한해 제한적으로 사용
+2. 변수의 유효범위(스코프) 최대한 좁게 만든다.
+3. 전역 변수 지양
+4. 변수보다 상수를 사용해 값의 변경 억제
+5. 변수명을 통해 변수의 목적이나 의미를 파악할 수 있게 한다.
+*/
+
+
+
 
