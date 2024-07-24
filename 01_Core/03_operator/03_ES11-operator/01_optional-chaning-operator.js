@@ -15,9 +15,11 @@ console.log(val);
 console.log("--------------------");
 
 
-var obj2 = ''
-var val = obj && obj.value;
-// falsy 값에 따라 결과가 바뀜
+// var obj2 = ''
+// var val = obj2 && obj2.value;
+// // falsy 값에 따라 결과가 바뀜
+// console.log(val2);
+
 
 console.log("--------------------");
 
@@ -25,5 +27,6 @@ console.log("--------------------");
 var str = ''
 
 var lan = str?.length;
-console.log(len);
 
+console.log(len);
+// 빈 문자열은 null 또는 undefined가 아니므로 문자열의 길이 값이 담긴다.
