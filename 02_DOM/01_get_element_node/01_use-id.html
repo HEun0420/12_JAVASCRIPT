@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+.area{
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgoldenrodyellow;
+}
+
+</style>
+
 </head>
+
 <body>
     <h1>01. id를 이용한 요소 노드 취득</h1>
     <pre>
@@ -18,5 +28,17 @@
     <div id="area1" class="area">
         div 영역
     </div>
+
+    <script>
+        const $elem=document.getElementById('area1');
+        console.log($elem);
+        // 해당 아이디를 가진 요소 중 첫번째 요소만 찾아온다.
+
+        $elem.style.backgroundColor= 'skyblue';
+
+        const $noelem = document.getElementById('area3');
+        console.log($noelem); // null
+        
+    </script>
 </body>
 </html>
