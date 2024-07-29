@@ -1,8 +1,8 @@
-//1. Numver 생성자 함수를 new 연산자 업이 호출
-console.log(Number("10"));
-console.log(Number("100.1"));
-console.log(Number(true));
-console.log(Number(false));
+//1. Numbver 생성자 함수를 new 연산자 없이 호출
+console.log(Number("10")); // 10
+console.log(Number("100.1")); // 100.1
+console.log(Number(true)); // 1
+console.log(Number(false)); // 0
 
 console.log("======== parse 이용 ========");
 

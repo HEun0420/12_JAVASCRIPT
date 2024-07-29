@@ -16,9 +16,8 @@ console.log('integer:',integer);
 // === 일치비교: 타입, 값 모두 일치하는지 검사하는 연산자
 
 // 숫자타입은 모두 실수로 처리된다,
-console.log(10===10.0);
-
-console.log(10/4);
+console.log(10===10.0); //100
+console.log(10/4); // 2.5
 
 /* 
 숫자 타입은 추가적으로 세가지의 특별한 값 표현
@@ -27,9 +26,9 @@ Infinity  : 양의 무한대
 NaN (not-a-number): 산술 연산 불가
 */
 
-console.log(10/0);
-console.log(10/ -0);
-console.log(1*'문자열');
+console.log(10/0); // infinity
+console.log(10/ -0); // -infinity
+console.log(1*'문자열'); // NaN
 
 
 

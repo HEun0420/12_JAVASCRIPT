@@ -33,6 +33,12 @@ configurable – true이면 프로퍼티 삭제나 플래그 수정이 가능하
 */
 console.log(Object.getOwnPropertyDescriptors(arr));
 
+// 자바스크립트는 배열의 요소가 연속적으로 위치하지 않고,
+// 일부가 비어있는 희소 배열을 문법적으로 허용한다.
+const sparse = [,2,4];
+console.log(sparse);
+
+
 
 
 

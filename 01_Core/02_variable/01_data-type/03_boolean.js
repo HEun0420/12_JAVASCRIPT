@@ -4,6 +4,6 @@
 */
 
 var flag = true;
-console.log(flag);
+console.log(flag); // true
 flag = false;
-console.log(flag);
+console.log(flag); // false
