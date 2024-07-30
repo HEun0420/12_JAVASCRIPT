@@ -52,16 +52,18 @@
             const $li = document.createElement('li');
             $li.textContent = text;
             
-            //dom이 3번 그려지면서, 리플로우, 리페인트 3번 실행됨 -> 비효율적
-            // $food.appendChild($li);
-            
-            // div에 li를 추가
-            $container.append($li);
-            //
-        })
+            $li.textContent = text;
 
-        // $food.appendChild($container);
-        $food.appendChild($fragment)
+// div에 li를 추가
+// $container.append($li);
+
+$fragment.appendChild($li);
+})
+
+// $food.appendChild($container);
+
+$food.appendChild($fragment);
+
     </script>
 </body>
 </html>
