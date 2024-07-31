@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01. open, alert, confirm, propmt 메소드</h1>
+    
+    <h3>브라우저 환경</h3>
+
+    <pre>
+    자바스크립트가 돌아가는 플랫폼은 호스트(host) 라고 불린다. 
+    호스트 환경이 웹 브라우저일 때 사용하는 할 수 있는 기능은 개괄적으로 아래와 같다. 
+    
+    window 
+        ㄴ DOM (document, ...)
+        ㄴ BOM (location, navigator, screen, history, ...)
+        ㄴ JavaScript (Object, Array, Function, ...)
+    
+    최상단의 window 객체는 자바스크립트 코드의 전역 객체이자 
+    브라우저 창(browser window)을 대변하고 이를 제어할 수 있는 메서드를 제공한다. 
+    window 객체는 전역 객체이므로 메서드 호출 시 생략할 수 있다. 
+    </pre>
+    
+    <h3>open</h3>
+    <pre>
+    window.open(url, name, params) 메서드로 새 창을 열 수 있다. 
+    url : 새 창에 로드할 URL이다. 
+    name : 새 창의 이름으로 해당 이름을 가진 창이 이미 있으면 그 안에서 열리고, 그렇지 않으면 새 창이 열린다. 
+    params : 새 창의 설정을 쉼표로 구분하여 문자열로 전달한다. (ex 네비게이션, 크기, 위치 등에 관한 내용)
+    </pre>
+
+    <button id ="btn1">새로운 창 열기</button>
+
+    <script>
+        document.getElementById('btn1').onclick = () =>{ 
+            window.open('https://www.google.com','popup1', 'width=1000, height=800')
+        }
+    </script>
+</body>
+</html>
